@@ -1,3 +1,5 @@
+const React = require('react');
+const ReactDOM = require('react-dom');
 const Product = require('./components/Product');
 
 ReactDOM.render(
@@ -6,3 +8,4 @@ ReactDOM.render(
 );
 
 require('./test/index-test.js'); // Leave this in!
+
