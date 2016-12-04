@@ -1,8 +1,9 @@
-const React = require('react');
+import React from 'react';
 const { shallow } = require('enzyme');
 const sinon = require('sinon');
-
-const Product = require('../components/Product');
+//
+// const Product = require('../components/Product');
+import Product from '../components/Product';
 
 const ALL_PROPS_VALID = {
   name: 'Some product',
