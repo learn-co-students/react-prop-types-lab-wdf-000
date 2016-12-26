@@ -32,13 +32,3 @@ Product.propTypes = {
 
 
 module.exports = Product;
-
-
-// In the components/Product.js file, create a Product React component.
-// This component has the following props:
-// name: a string — required
-// producer: a string — optional
-// hasWatermark: a boolean — optional, defaults to false
-// color: a string — required, can only be 'white', 'eggshell-white' or 'salmon'
-// weight: a number — required, ranges between 80 and 300
-// Note: for the weight prop, we'll need custom logic. Remember that it's possible to write your own prop validator function!
