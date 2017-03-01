@@ -15,13 +15,25 @@ class Product extends React.Component {
   }
 }
 
+
 Product.defaultProps = {
   hasWatermark: false,
 }
 
 Product.propTypes = {
   name: React.PropTypes.string.isRequired,
-  producer: React.PropTypes.string
+  producer: React.PropTypes.string,
+  hasWatermark: React.PropTypes.bool,
+  color: React.PropTypes.oneOf(['white', 'eggshell-white',
+  'salmon']).isRequired,
+  weight: function(props, propName, componentName) {
+    debugger;
+    // if (typeof props[propName] !== "number" || props[propName] > 300 || props[propName] < 80) {
+    //   return new Error("Sorry")
+    // } else {
+    //   return null
+    // }
+  }
 }
 
 
